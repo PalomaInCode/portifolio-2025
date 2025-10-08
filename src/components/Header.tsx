@@ -42,7 +42,7 @@ const Header = () => {
 
         {/* Menu */}
         <div className="hidden md:flex items-center gap-8">
-          {["sobre", "experiencia", "habilidades", "projetos", "contato"].map(
+          {["sobre", "experiência", "habilidades", "projetos"].map(
             (item) => (
               <button
                 key={item}
