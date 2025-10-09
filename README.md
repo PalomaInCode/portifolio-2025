@@ -1,8 +1,8 @@
-# Vite React ShadCN TS
+# Portfólio 2025
 
 ![GitHub](https://img.shields.io/github/license/PalomaInCode/portifolio-2025)
 ![npm](https://img.shields.io/npm/v/vite_react_shadcn_ts)
-![GitHub Pages](https://img.shields.io/github/deployments/PalomaInCode/portifolio-2025/gh-pages)
+![GitHub Pages](https://palomaincode.github.io/portifolio-2025/)
 
 Portfólio desenvolvido com **React**, **Vite**, **TypeScript**, **TailwindCSS** e componentes ShadCN/Radix UI.
 
