@@ -35,14 +35,6 @@ const Contact = () => {
       href: "mailto:palomasdias04@gmail.com",
       color: "text-primary"
     },
-    /* {
-      icon: Phone,
-      label: "Telefone",
-      value: "+55 (11) 95334-9365",
-      href: "tel:+5511953349365",
-      color: "text-accent"
-    },
-    */
     {
       icon: MapPin,
       label: "Localização",

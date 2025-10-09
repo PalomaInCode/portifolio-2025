@@ -14,6 +14,7 @@ const Footer = () => {
     { name: "Experiência", href: "#experiencia" },
     { name: "Habilidades", href: "#habilidades" },
     { name: "Projetos", href: "#projetos" },
+    { name: "Aprendizados", href: "/aprendizados" },
     { name: "Contato", href: "#contato" }
   ];
 
@@ -55,13 +56,23 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
-                  >
-                    {link.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-                  </button>
+                  {link.href.startsWith('#') ? (
+                    <button
+                      onClick={() => scrollToSection(link.href)}
+                      className="text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
+                    >
+                      {link.name}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                    </button>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-muted-foreground hover:text-primary transition-colors duration-300 relative group block"
+                    >
+                      {link.name}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -72,7 +83,6 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-foreground">Contato</h4>
             <div className="space-y-2 text-muted-foreground">
               <p>palomasdias04@gmail.com</p>
-              <p>+55 (11) 95334-9365</p>
               <p>São Paulo - SP</p>
             </div>
             <div className="p-4 rounded-lg bg-muted/30 border border-border/50">

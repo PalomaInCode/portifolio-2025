@@ -3,8 +3,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import Aprendizados from "./pages/Aprendizados";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+
 
 const queryClient = new QueryClient();
 
@@ -14,10 +16,11 @@ const App = () => (
       <Toaster />
       <Sonner />
     <HashRouter>
-  <Routes>
-    <Route path="/" element={<Index />} />
-    <Route path="*" element={<NotFound />} />
-  </Routes>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/aprendizados" element={<Aprendizados />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
     </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
