@@ -126,6 +126,4 @@ https://PalomaInCode.github.io/portifolio-2025/
 ---
 
 PalomaInCode © 2025
-
-Quer que eu faça isso?
 ```
